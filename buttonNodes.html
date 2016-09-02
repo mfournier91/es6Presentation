@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+  <button>button1</button>
+  <button>button2</button>
+  <button>button3</button>
+  <button>button4</button>
+
+
+  <script>
+    var buttonNodes = document.getElementsByTagName('button');
+    for (var i = 0; i < buttonNodes.length; i++){
+      buttonNodes[i].addEventListener('click', function() {
+        console.log('You clicked element number : ' + i)
+      });
+    }
+  </script>
+</body>
+</html>
